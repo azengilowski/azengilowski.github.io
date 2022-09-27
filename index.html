@@ -23,15 +23,17 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0;">
 
 	<style type='text/css'>
-		div {
-			font-family: 'Noto';
+		.paragraph a {
+			color: #d11e1e;
+			text-decoration: none;
 		}
-		.menu-item:hover img {
-			transform: scale(1.05);
-			-webkit-transition: transform .25s ease-in-out;
-		}
-		.menu-item:hover div {
+		.paragraph a:hover {
 			text-decoration: underline;
+			text-underline-position: under;
+		}
+		.menu-item-container:hover div {
+			text-decoration: underline;
+			color: #d11e1e;
 		}
 		.menu-item img {
 			width: 150px;
@@ -39,7 +41,6 @@
 			border-radius: 150px;
 			border: 3px solid black;
 		}
-
 		.icon {
 			width: 150px;
 			height: 150px;
@@ -48,36 +49,35 @@
 			background-repeat: no-repeat;
 			border: 3px solid black;		
 		}
-		.icon:hover {
+		.menu-item-container:hover .icon{
 			transform: scale(1.05);
 			-webkit-transition: transform .25s ease-in-out;
 		}
 		.research {
 			background-image: url(doctor_outline.png);
 		}	
-		.research:hover {
+		.menu-item-container:hover .research {
 			background-image: url(doctor.png);
 		}
 		.teaching {
 			background-image: url(discussion_outline.png);
 			background-position: -4px 6px;
 		}	
-		.teaching:hover {
+		.menu-item-container:hover .teaching {
 			background-image: url(discussion.png);
 		}
 		.publications {
 			background-image: url(knowledge_outline.png);
 		}	
-		.publications:hover {
+		.menu-item-container:hover .publications {
 			background-image: url(knowledge.png);
 		}
 		.cv {
 			background-image: url(thesis_outline.png);
 		}	
-		.cv:hover {
+		.menu-item-container:hover .cv {
 			background-image: url(thesis.png);
 		}
-
 		.menu-item {
 			padding:0 15px;
 			display: flex;
@@ -85,7 +85,6 @@
 			align-items: center;
 			flex-grow: 1;
 		}
-
 		.external-icon img {
 			height: 48px;
 			width: 48px;
@@ -94,20 +93,34 @@
 			font-family: "Abigate";
 			src: url(abigate_desgo.ttf) format("truetype");
 		}
+		@font-face {
+			font-family: "Alice";
+			src: url(Alice-Regular.ttf) format("truetype");
+		}
+		.paragraph {
+			font-family: "Alice";
+		}
 		h1.abigate { 
 			font-family: "Abigate", Verdana, Tahoma;font-size: 36px;
-
 		}
 		.menu-label {
 			font-family: "Abigate", Verdana, Tahoma;
 			text-transform: lowercase;
 		}
-		.attribution a {
+		a {
 			color: black;
+			text-decoration: none;
 		}
 		.attribution {
 			width:  100%;
 			text-align: center;
+		}
+		.attribution a {
+			color: black;
+			text-decoration: none;
+		}
+		.attribution a:hover {
+			text-decoration: underline;
 		}
 	</style>
 
@@ -121,13 +134,24 @@
 						<h1 class="abigate" style="text-align:left;margin-left: 10px;margin-top: 10px;margin-bottom: 0;">Allison Zengilowski</h1>
 						<div style="display: flex;flex-direction: row;justify-content: center;margin-bottom: 50px;flex-wrap: wrap;">
 							<img src="headshot.png" alt="Picture" style="height: 250px;width: 250px;border-radius: 25px; border: 3px solid black;margin-top: 30px;" />
-							<div class="paragraph" style="display: flex;max-width: 500px;align-self: center;justify-content: center;margin-left: 35px;padding-right: 35px;margin-top: 30px;">
-								<span style="color:rgb(15, 20, 25)"><font size="4">Phasellus vulputate pellentesque tortor vel ultricies. Nam pharetra nunc metus, et ultrices neque laoreet eget. Nullam ut purus sed magna vehicula vestibulum. Duis sit amet pellentesque lorem. Aenean gravida posuere lacus at rutrum. Aenean id pellentesque orci. Sed placerat varius tincidunt. In commodo vel nunc ornare interdum. Donec eget leo sollicitudin nisi ultrices posuere eu porttitor quam. Integer vehicula tortor erat, at tincidunt sapien egestas ac. Donec eget facilisis orci. Aliquam sed ex nec nisl vulputate aliquet ac eu tellus. Aenean mattis, mauris a condimentum euismod, ante urna laoreet lectus, id pellentesque odio eros id quam. Praesent in rutrum ante.
+							<div class="paragraph" style="display: flex;max-width: 800px;align-self: center;justify-content: center;margin-left: 35px;padding-right: 35px;margin-top: 30px;">
+								<span style="color:rgb(15, 20, 25)"><font size="3">
+									<div>
+										I am an educational psychologist interested in learning about how people think about their own learning. In my research, I draw from perspectives on cognition and metacognition, motivation and emotions, and identity and lived experiences. I am passionate about teaching and intentionally intertwine my research and educational practices. 
+									</div>
+									<br/>
+									<div>
+										Currently, I am a postdoctoral scholar for a <a target="_blank" href="https://www.sparkmath.org/">multi-institutional project </a> to develop 6th grade math curriculum with focuses on execution function development, criticality, inclusivity, and relevance for historically disenfranchised students. I collaborate with Dr. Yuko Munakata’s <a target="_blank" href="https://cognitionincontext.ucdavis.edu/"> Cognition in Context Lab </a> and <a target="_blank" href="https://soe.umich.edu/directory/faculty-staff/jamaal-sharif-matthews">Dr. Jamaal Matthew’s </a> Belonging for Equity in Learning Lab.
+									</div>
+									<br/>
+									<div>
+										Outside of my professional pursuits, I was classically trained in ballet and continue to enjoy <a target="_blank" href="https://www.youtube.com/watch?v=Vt6vpg607Mk">dancing</a>. You can also find me playing piano, knitting, and baking (ask me about my maple and cream pie recipe). 
+									</div>
 								</font>
 							</span>
 						</div>
 					</div>
-					<hr style="height: 3px; background: black;width: 66%;margin-bottom: 30px;"/>
+					<hr style="height: 1px; background: black;width: 66%;margin-bottom: 30px;"/>
 					<div style="margin-bottom: 40px;">
 						<div>
 							<div style="margin:0 -15px;">
@@ -135,60 +159,60 @@
 									<tbody>
 										<tr style="display: flex;flex-wrap: wrap;">
 											<td class="menu-item">
-												<div>
-													<div style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:left">
-														<a href='research.html'>
+												<a href='research.html'>
+													<div class="menu-item-container">
+														<div style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:left">
 															<div class="icon research"></div>
-														</a>
+														</div>
+														<div class="menu-label" style="text-align:center;">
+															<strong>
+																<font size="5">Research</font>
+															</strong>
+														</div>
 													</div>
-												</div>
-												<div class="menu-label" style="text-align:center;">
-													<strong>
-														<font size="5">Research</font>
-													</strong>
-												</div>
+												</a>
 											</td>
 											<td class="menu-item">
-												<div>
-													<div style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:left">
-														<a href='teaching.html'>
+												<a href='teaching.html'>
+													<div class="menu-item-container">
+														<div style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:left">
 															<div class="icon teaching"></div>
-														</a>
+														</div>
+														<div class="menu-label" style="text-align:center;">
+															<strong>
+																<font size="5">Teaching</font>
+															</strong>
+														</div>
 													</div>
-												</div>
-												<div class="menu-label" style="text-align:center;">
-													<strong>
-														<font size="5">Teaching</font>
-													</strong>
-												</div>
+												</a>
 											</td>
 											<td class="menu-item">
-												<div>
-													<div style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:left">
-														<a href='publications.html'>
+												<a href='publications.html'>
+													<div class="menu-item-container">
+														<div style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:left">
 															<div class="icon publications"></div>
-														</a>
+														</div>
+														<div class="menu-label" style="text-align:center;">
+															<strong>
+																<font size="5">Publications</font>
+															</strong>
+														</div>
 													</div>
-												</div>
-												<div class="menu-label" style="text-align:center;">
-													<strong>
-														<font size="5">Publications</font>
-													</strong>
-												</div>
+												</a>
 											</td>
 											<td class="menu-item">
-												<div>
-													<div style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:left">
-														<a href='cv.html'>
+												<a href='cv.html'>
+													<div class="menu-item-container">
+														<div style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:left">
 															<div class="icon cv"></div>
-														</a>
+														</div>
+														<div class="menu-label" style="text-align:center;">
+															<strong>
+																<font size="5">cv</font>
+															</strong>
+														</div>
 													</div>
-												</div>
-												<div class="menu-label" style="text-align:center;">
-													<strong>
-														<font size="5">cv</font>
-													</strong>
-												</div>
+												</a>
 											</td>				
 										</tr>
 									</tbody>
@@ -198,30 +222,30 @@
 					</div>
 					<div style="width:100%;justify-content: center;display: flex;">
 						<div class="paragraph" style="text-align:center;width: 1000px;margin-bottom: 50px;">
-							<font size="4">
+	<!-- 						<font size="4">
 								Phasellus vulputate pellentesque tortor vel ultricies. Nam pharetra nunc metus, et ultrices neque laoreet eget. Nullam ut purus sed magna vehicula vestibulum. Duis sit amet pellentesque lorem. Aenean gravida posuere lacus at rutrum. Aenean id pellentesque orci.
-							</font>
+							</font> -->
 						</div>
 					</div>
 					<div style="justify-content: center;width: 100%;display: flex;">
 						<div style="display: flex;flex-direction: row;justify-content: space-between;width: 200px;align-self: center;">
 							<div >
 								<div class="external-icon" style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:left">
-									<a href='https://twitter.com/ZengilowskiEd'>
+									<a target="_blank" href='https://twitter.com/ZengilowskiEd'>
 										<img src="twitter.png" alt="Picture" />
 									</a>
 								</div>
 							</div>
 							<div>
 								<div class="external-icon" style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:left;margin-top: 2px;">
-									<a href='https://scholar.google.com/citations?user=ezSgGPEAAAAJ&hl=en'>
+									<a target="_blank" href='https://scholar.google.com/citations?user=ezSgGPEAAAAJ&hl=en'>
 										<img src="gscholar.png" alt="Picture" />
 									</a>
 								</div>
 							</div>
 							<div>
 								<div class="external-icon" style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:left">
-									<a href='https://www.linkedin.com/in/azengilowski'>
+									<a target="_blank" href='https://www.linkedin.com/in/azengilowski'>
 										<img src="linkedin.png" alt="Picture" />
 									</a>
 								</div>
@@ -229,7 +253,7 @@
 						</div>
 					</div>
 					<div class="attribution">
-						<a href="https://www.flaticon.com/free-icons/thesis" title="thesis icons">Icons created by Victoruler - Flaticon</a>
+						<a target="_blank" href="https://www.flaticon.com/free-icons/thesis" title="thesis icons">Icons created by Victoruler - Flaticon</a>
 					</div>
 				</div>
 			</div>
