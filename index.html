@@ -2,6 +2,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-2E5KCGDL9Z"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'G-2E5KCGDL9Z');
+	</script>
 	<title>
 		Allison Zengilowski
 	</title>
@@ -31,6 +40,44 @@
 			border: 3px solid black;
 		}
 
+		.icon {
+			width: 150px;
+			height: 150px;
+			border-radius: 150px;
+			background-size: 150px;
+			background-repeat: no-repeat;
+			border: 3px solid black;		
+		}
+		.icon:hover {
+			transform: scale(1.05);
+			-webkit-transition: transform .25s ease-in-out;
+		}
+		.research {
+			background-image: url(doctor_outline.png);
+		}	
+		.research:hover {
+			background-image: url(doctor.png);
+		}
+		.teaching {
+			background-image: url(discussion_outline.png);
+			background-position: -4px 6px;
+		}	
+		.teaching:hover {
+			background-image: url(discussion.png);
+		}
+		.publications {
+			background-image: url(knowledge_outline.png);
+		}	
+		.publications:hover {
+			background-image: url(knowledge.png);
+		}
+		.cv {
+			background-image: url(thesis_outline.png);
+		}	
+		.cv:hover {
+			background-image: url(thesis.png);
+		}
+
 		.menu-item {
 			padding:0 15px;
 			display: flex;
@@ -55,6 +102,13 @@
 			font-family: "Abigate", Verdana, Tahoma;
 			text-transform: lowercase;
 		}
+		.attribution a {
+			color: black;
+		}
+		.attribution {
+			width:  100%;
+			text-align: center;
+		}
 	</style>
 
 </head>
@@ -66,7 +120,7 @@
 					<div >
 						<h1 class="abigate" style="text-align:left;margin-left: 10px;margin-top: 10px;margin-bottom: 0;">Allison Zengilowski</h1>
 						<div style="display: flex;flex-direction: row;justify-content: center;margin-bottom: 50px;flex-wrap: wrap;">
-							<img src="headshot.png" alt="Picture" style="height: 250px;width: 250px;border-radius: 10px; border: 3px solid black;margin-top: 30px;" />
+							<img src="headshot.png" alt="Picture" style="height: 250px;width: 250px;border-radius: 25px; border: 3px solid black;margin-top: 30px;" />
 							<div class="paragraph" style="display: flex;max-width: 500px;align-self: center;justify-content: center;margin-left: 35px;padding-right: 35px;margin-top: 30px;">
 								<span style="color:rgb(15, 20, 25)"><font size="4">Phasellus vulputate pellentesque tortor vel ultricies. Nam pharetra nunc metus, et ultrices neque laoreet eget. Nullam ut purus sed magna vehicula vestibulum. Duis sit amet pellentesque lorem. Aenean gravida posuere lacus at rutrum. Aenean id pellentesque orci. Sed placerat varius tincidunt. In commodo vel nunc ornare interdum. Donec eget leo sollicitudin nisi ultrices posuere eu porttitor quam. Integer vehicula tortor erat, at tincidunt sapien egestas ac. Donec eget facilisis orci. Aliquam sed ex nec nisl vulputate aliquet ac eu tellus. Aenean mattis, mauris a condimentum euismod, ante urna laoreet lectus, id pellentesque odio eros id quam. Praesent in rutrum ante.
 								</font>
@@ -84,7 +138,7 @@
 												<div>
 													<div style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:left">
 														<a href='research.html'>
-															<img src="research.png" alt="Picture" />
+															<div class="icon research"></div>
 														</a>
 													</div>
 												</div>
@@ -98,7 +152,7 @@
 												<div>
 													<div style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:left">
 														<a href='teaching.html'>
-															<img src="teaching.png" alt="Picture" />
+															<div class="icon teaching"></div>
 														</a>
 													</div>
 												</div>
@@ -112,7 +166,7 @@
 												<div>
 													<div style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:left">
 														<a href='publications.html'>
-															<img src="publications.png" alt="Picture" />
+															<div class="icon publications"></div>
 														</a>
 													</div>
 												</div>
@@ -126,7 +180,7 @@
 												<div>
 													<div style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:left">
 														<a href='cv.html'>
-															<img src="cv.png" alt="Picture" />
+															<div class="icon cv"></div>
 														</a>
 													</div>
 												</div>
@@ -173,6 +227,9 @@
 								</div>
 							</div>
 						</div>
+					</div>
+					<div class="attribution">
+						<a href="https://www.flaticon.com/free-icons/thesis" title="thesis icons">Icons created by Victoruler - Flaticon</a>
 					</div>
 				</div>
 			</div>
