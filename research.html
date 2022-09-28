@@ -23,8 +23,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0;">
 
 	<style type='text/css'>
+		@font-face {
+			font-family: "Alice";
+			src: url(Alice-Regular.ttf) format("truetype");
+		}
 		div {
-			font-family: 'Noto';
+			font-family: 'Alice';
 		}
 		@font-face {
 			font-family: "Abigate";
@@ -33,81 +37,230 @@
 		h1.abigate { 
 			font-family: "Abigate", Verdana, Tahoma;font-size: 36px;
 		}
-	</style>
-</head>
-<body style="background: white;">
-	<div id="wrapper">
-		<div id="main" style="padding: 12px">
-			<div id="content-wrapper">
-				<div id="content">
-					<div style="display: flex;justify-content: space-between;">
-						<h1 class="abigate" style="text-align:left;margin-left: 10px;margin-top: 10px;">Research</h1>
-						<a style="text-decoration: none;color: black;"href="index.html"><h3 style="margin-right: 20px;">&#8592; back </h3></a>		
-					</div>
-					<div>
-						<div class="">
-<!-- 							<div class="">
-								In my program of research, I investigate learning as it is tied to cognition, affect/motivation, and identity. To understand how these learning processes are rooted in individuals’ lived experiences, I conduct primarily qualitative or mixed-methods studies. This helps to ensure learners’ voices shape our understanding of how learning occurs and its nuances.
-							</div>
-							<div style="display: flex;">
+		.header {
+			margin-bottom: 8px;
+			font-size: 18px;
+		}
+		.question {
+			margin-bottom: 16px;
+		}
+		.body {
+			margin-bottom: 16px;
+		}
+		.question-header {
+			margin-bottom: 8px;
+			font-weight: bold;
+		}
+		.method-header {
+			font-weight: bold;
+		}
 
+		.section-container:hover .section:not(:hover) {
+			color: lightgray;
+		}
 
-								<div class="header">
-									Emotions and behaviors involved in learning and educational environments
+		.section {
+			margin-left: 10px;
+			width: 400px;
+			flex-grow: 1;
+			margin-right: 30px;
+			padding: 10px;
+			border-radius: 8px;
+			color: black;
+		}
+
+		.icon {
+			width: 150px;
+			height: 150px;
+			border-radius: 150px;
+			background-size: 150px;
+			background-repeat: no-repeat;
+			border: 3px solid black;
+			margin: 0 auto;
+			margin-bottom: 30px;
+		}
+		.brainstorm {
+			background-image: url(brainstorm.png);
+		}	
+		.happy {
+			background-image: url(happy.png);
+		}	
+		.school {
+			background-image: url(school.png);
+		}
+		.spacer-container {
+/*			height: 400px;
+*/		}
+			@media only screen and (max-width: 939px) {
+				.spacer-container {
+					height: unset;
+				}
+			}
+		</style>
+	</head>
+	<body style="background: white;">
+		<div id="wrapper">
+			<div id="main" style="padding: 12px">
+				<div id="content-wrapper">
+					<div id="content">
+						<div style="display: flex;justify-content: space-between;">
+							<h1 class="abigate" style="text-align:left;margin-left: 10px;margin-top: 10px;">Research</h1>
+							<a style="text-decoration: none;color: black;"href="index.html"><h3 style="margin-right: 20px;">&#8592; back </h3></a>		
+						</div>
+						<div>
+							<div>
+								<div style="margin-bottom: 40px;font-size: 20px;margin-left: 10px;">
+									In my program of research, I investigate learning as it is tied to cognition, affect/motivation, and identity. To understand how these learning processes are rooted in individuals’ lived experiences, I conduct primarily qualitative or mixed-methods studies. This helps to ensure learners’ voices shape our understanding of how learning occurs and its nuances.
 								</div>
-								<div>
-									Emotions play an important role in learning, potentially impacting students’ behaviors and teachers’ responses. I investigate confusion, an emotional and metacognitive experience, how students and teachers respond to the experience. In addition, I consider certain behaviors or strategies students employ, like help-seeking, and their associated experiences. Help-seeking is a self-regulatory strategy, often a social process employed when learners face obstacles en route to comprehension. Because learning exists in a sociocultural context, developing nuanced understandings of the experiences and assets of specific groups of students can aid in the development of adaptive and effective strategies and systems.
+								<div class="section-container" style="display:flex; justify-content: space-between;margin-right: 20px;flex-wrap: wrap;">
+									<div class="section section1" style="display: flex;flex-direction: column;">
+										<div class="icon happy"></div>
+										<div class="spacer-container">
+											<div class="header">
+												<b>
+													Emotions and behaviors involved in learning and educational environments
+												</b>
+											</div>
+											<div class="body">
+												Emotions play an important role in learning, potentially impacting students’ behaviors and teachers’ responses. I investigate confusion, an emotional and metacognitive experience, how students and teachers respond to the experience. In addition, I consider certain behaviors or strategies students employ, like help-seeking, and their associated experiences. Help-seeking is a self-regulatory strategy, often a social process employed when learners face obstacles en route to comprehension. Because learning exists in a sociocultural context, developing nuanced understandings of the experiences and assets of specific groups of students can aid in the development of adaptive and effective strategies and systems.
+											</div>
+										</div>
+										<div class="spacer-container">
+											<div class="question-header">
+												Questions:
+											</div>
+											<div class="question">
+												<i>
+													What factors play a role in determining what path undergraduate students take when feeling confused during learning?
+												</i>
+											</div>
+											<div class="question">
+												<i>
+													How do first-generation students develop help-seeking behaviors and how did the pandemic impact their help-seeking processes? How do first-generation students develop and distribute capital in the context of helping/help-seeking?
+												</i>
+											</div>
+											<div class="question">
+												<i>
+													What executive function strategies do 6th graders employ when playing a card game?
+												</i>
+											</div>
+											<div class="question">
+												<i>
+													Do K-12 teachers’ perceived expectancy, value, and cost for supporting students’ emotions differ depending on the emotion (confusion, curiosity, interest, frustration)? What factors do teachers consider when evaluating expectancy, value, and cost of supporting students’ emotions?
+												</i>
+											</div>
+										</div>
+										<div class="method-header">
+											Methods:
+										</div>
+										<ul>
+											<li>
+												Focus groups/Interviews
+											</li>
+											<li>
+												Stimulated-recall Interviews
+											</li>
+											<li>
+												Surveys
+											</li>
+											<li>
+												Experimental
+											</li>
+											<li>
+												Think-aloud protocols
+											</li>
+										</ul>
+									</div>
+									<div class="section section2" style="display: flex;flex-direction: column;">
+										<div class="icon school"></div>	
+										<div class="spacer-container">
+											<div class="header">
+												<b>
+													Role of context in learning processes and motivational experiences
+												</b>
+											</div>
+											<div class="body">
+												Learning is an emotionally connected, goal-directed, contextual process in pursuit of making meaning. To account for the cognitive processes and decisions students make during learning, I investigate contexts that allow students to exchange and negotiate divergent viewpoints, such as online discussions. They offer a site for investigating language processes, with a particular affordance for conversations supporting learning. I also investigate contexts such as racialized schools where race is salient due to messages/actions of students and teachers. Social inequity or racialized stressors may affect the academic motivation or performance of minoritized individuals, where encountering stereotypes, for example, can impact historically marginalized students’ psychological and emotional well-being, which can adversely affect their executive functioning, academic performance, and motivation.
+											</div>
+										</div>
+										<div class="spacer-container">
+											<div class="question-header">
+												Questions:
+											</div>
+											<div class="question">
+												<i>
+													How do graduate students with different levels of perceived belongingness report on their cognitive and affective experiences in different modes of academic discussion (face-to-face, online synchronous, online asynchronous)? How do graduate students with different levels of belongingness use the pronoun “We” in expressing themselves in different online discussion modes?
+												</i>
+											</div>
+											<div class="question">
+												<i>
+													Do middle and high school students’ experiences of racial-ethnic stereotyping moderate the relation between executive functions and two sources of math-related self-efficacy?
+												</i>
+											</div>
+										</div>
+										<div class="method-header">
+											Methods:
+										</div>
+										<ul>
+											<li>
+												Discourse analysis
+											</li>
+											<li>
+												Surveys
+											</li>
+											<li>
+												Secondary data analysis
+											</li>
+										</ul>
+									</div>
+									<div class="section section3" style="display: flex;flex-direction: column;">
+										<div class="icon brainstorm"></div>	
+										<div class="spacer-container">
+											<div class="header">
+												<b>
+													Revising misconceptions and challenging information
+												</b>
+											</div>
+											<div class="body">
+												Individuals respond in unique ways to information that conflicts with or challenges their current beliefs. Refutation texts are one proposed tactic to aid in knowledge revision processes, as their structure makes learners’ misconceptions explicit and immediately presents “corrections” to these beliefs, intending to co-activate old and new information in order to integrate the correct understanding into long-term memory. However, the body of literature from which these assumptions are drawn has theoretical and methodological weakness, and the refutation text structure may not align with the need for critical and culturally responsive pedagogy in classrooms. These aspects pose difficulties for considering effective ways to counter misinformation and challenge deeply held beliefs.
+											</div>
+										</div>
+										<div class="spacer-container">
+											<div class="question-header">
+												Questions:
+											</div>
+											<div class="question">
+												<i>
+													What are the methodological and theoretical problems associated with current refutation text studies aimed at changing individuals’ previously held beliefs? How do learners process information related to identity-salient topics and what are the reasons they provide for resisting or accepting the invitation to change their beliefs?
+												</i>
+											</div>
+											<div class="question">
+												<i>
+													How do we think about knowledge revision in the context of critical literacy and culturally responsive pedagogy?
+												</i>
+											</div>
+										</div>
+										<div class="method-header">
+											Methods:
+										</div>
+										<ul>
+											<li>
+												Critical review
+											</li>
+											<li>
+												Surveys
+											</li>
+											<li>
+												Perspectival review
+											</li>
+										</ul>
+									</div>
 								</div>
-								<div>
-									Questions:
-								</div>
-								<div>
-									<i>
-										What factors play a role in determining what path undergraduate students take when feeling confused during learning?
-									</i>
-								</div>
-								<div>
-									<i>
-										How do first-generation students develop help-seeking behaviors and how did the pandemic impact their help-seeking processes? How do first-generation students develop and distribute capital in the context of helping/help-seeking?
-									</i>
-								</div>
-									<div>
-									<i>
-										What executive function strategies do 6th graders employ when playing a card game?
-									</i>
-								</div>
-								</div>
-									<div>
-									<i>
-										Do K-12 teachers’ perceived expectancy, value, and cost for supporting students’ emotions differ depending on the emotion (confusion, curiosity, interest, frustration)? What factors do teachers consider when evaluating expectancy, value, and cost of supporting students’ emotions?
-									</i>
-								</div>
-								<div>
-									Methods:
-								</div>
-								<ul>
-									<li>
-										Focus groups/Interviews
-									</li>
-									<li>
-										Stimulated-recall Interviews
-									</li>
-									<li>
-										Surveys
-									</li>
-									<li>
-										Experimental
-									</li>
-									<li>
-										Think-aloud protocols
-									</li>
-								</ul> -->
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-</body>
-</html>
+	</body>
+	</html>
