@@ -38,8 +38,9 @@
 			font-family: "Abigate", Verdana, Tahoma;font-size: 36px;
 		}
 		.header {
-			margin-bottom: 8px;
+			margin-bottom: 16px;
 			font-size: 18px;
+			text-align: center;
 		}
 		.question {
 			margin-bottom: 16px;
@@ -57,6 +58,12 @@
 
 		.section-container:hover .section:not(:hover) {
 			color: lightgray;
+		}
+
+		.section-container:hover .section:not(:hover) .icon {
+			background-color: lightgray;
+			opacity: .2;
+			border: 3px solid lightgray;
 		}
 
 		.section {
@@ -105,11 +112,11 @@
 					<div id="content">
 						<div style="display: flex;justify-content: space-between;">
 							<h1 class="abigate" style="text-align:left;margin-left: 10px;margin-top: 10px;">Research</h1>
-							<a style="text-decoration: none;color: black;"href="index.html"><h3 style="margin-right: 20px;">&#8592; back </h3></a>		
+							<a style="text-decoration: none;color: black;"href="index.html"><h3 style="margin-right: 20px;">&#8592; back </h3></a>
 						</div>
 						<div>
 							<div>
-								<div style="margin-bottom: 40px;font-size: 20px;margin-left: 10px;">
+								<div style="margin-bottom: 40px;font-size: 20px;margin-left: 10px;margin-right: 20px;">
 									In my program of research, I investigate learning as it is tied to cognition, affect/motivation, and identity. To understand how these learning processes are rooted in individuals’ lived experiences, I conduct primarily qualitative or mixed-methods studies. This helps to ensure learners’ voices shape our understanding of how learning occurs and its nuances.
 								</div>
 								<div class="section-container" style="display:flex; justify-content: space-between;margin-right: 20px;flex-wrap: wrap;">
@@ -118,7 +125,9 @@
 										<div class="spacer-container">
 											<div class="header">
 												<b>
-													Emotions and behaviors involved in learning and educational environments
+													<i>
+														Emotions and behaviors involved in learning and educational environments
+													</i>
 												</b>
 											</div>
 											<div class="body">
@@ -176,7 +185,9 @@
 										<div class="spacer-container">
 											<div class="header">
 												<b>
-													Role of context in learning processes and motivational experiences
+													<i>
+														Role of context in learning processes and motivational experiences
+													</i>
 												</b>
 											</div>
 											<div class="body">
@@ -218,7 +229,9 @@
 										<div class="spacer-container">
 											<div class="header">
 												<b>
-													Revising misconceptions and challenging information
+													<i>
+														Revising misconceptions and challenging information
+													</i>
 												</b>
 											</div>
 											<div class="body">
@@ -246,9 +259,6 @@
 										<ul>
 											<li>
 												Critical review
-											</li>
-											<li>
-												Surveys
 											</li>
 											<li>
 												Perspectival review
