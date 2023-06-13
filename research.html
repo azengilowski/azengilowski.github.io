@@ -20,6 +20,7 @@
 	<meta property="og:description" content="Research interests of Allison Zengilowski." />
 
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 
 	<style type='text/css'>
 		@font-face {
@@ -55,19 +56,15 @@
 			font-weight: bold;
 		}
 
-		.section-container:hover .section:not(:hover) {
-			color: lightgray;
+		.section1 {
+			background-color: rgb(111,116,246,.1);
+		}
+		.section2 {
+			background-color: rgb(96,182,217,.1);
 		}
 
-		.section-container:hover .section:not(:hover) .icon {
-			background-color: lightgray;
-			opacity: .2;
-			border: 3px solid lightgray;
-		}
-
-		.section-container:hover .section:not(:hover) iframe {
-			background-color: lightgray;
-			opacity: .2;
+		.section3 {
+			background-color: rgb(244,173,82,.1);
 		}
 
 		.section {
@@ -75,11 +72,11 @@
 			width: 400px;
 			flex-grow: 1;
 			margin-right: 30px;
-			padding: 10px;
+			padding: 12px;
 			border-radius: 8px;
 			color: black;
+			margin-bottom: 30px;
 		}
-
 		.icon {
 			width: 150px;
 			height: 150px;
@@ -89,6 +86,7 @@
 			border: 3px solid black;
 			margin: 0 auto;
 			margin-bottom: 30px;
+			background-color: white;
 		}
 		.brainstorm {
 			background-image: url(brainstorm.png);
@@ -99,14 +97,10 @@
 		.school {
 			background-image: url(school.png);
 		}
-		.spacer-container {
-/*			height: 400px;
-*/		}
-			@media only screen and (max-width: 939px) {
-				.spacer-container {
-					height: unset;
-				}
-			}
+		.back-button {
+			font-size: 20px;
+			font-family: "Abigate", Verdana, Tahoma;
+		}
 		</style>
 	</head>
 	<body style="background: white;">
@@ -116,14 +110,14 @@
 					<div id="content">
 						<div style="display: flex;justify-content: space-between;">
 							<h1 class="abigate" style="text-align:left;margin-left: 10px;margin-top: 10px;">Research</h1>
-							<a style="text-decoration: none;color: black;"href="index.html"><h3 style="margin-right: 20px;">&#8592; back </h3></a>
+							<a style="margin-top: 12px;text-decoration: none;color: black;"href="index.html"><div class="back-button" style="margin-right: 20px;">&#8592; back </div></a>
 						</div>
 						<div>
 							<div>
 								<div style="margin-bottom: 40px;font-size: 20px;margin-left: 10px;margin-right: 20px;">
 									I investigate learning within the contexts of cognition, affect/motivation, and identity. To understand how these learning processes are rooted in individuals’ lived experiences, I conduct qualitative and mixed-methods studies. These methodologies allow learners’ voices to shape our understanding of how learning occurs and the nuances of learning.
 								</div>
-								<div class="section-container" style="display:flex; justify-content: space-between;margin-right: 20px;flex-wrap: wrap;">
+								<div class="section-container" style="gap: 20px;display:flex; justify-content: space-between;margin-right: 20px;flex-wrap: wrap;">
 									<div class="section section1" style="display: flex;flex-direction: column;">
 										<div class="icon happy"></div>
 										<div class="spacer-container">
@@ -282,9 +276,9 @@
 										<div class="method-header" style="margin-bottom:16px">
 											Outreach
 										</div>
-										<iframe width="350px" height="250px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1098804097&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/user-883650452" title="APA Division 15" target="_blank" style="color: #cccccc; text-decoration: none;">APA Division 15</a> · <a href="https://soundcloud.com/user-883650452/allison-n-zengilowski-brendan-a-schuetze" title="Allison N. Zengilowski &amp; Brendan A. Schuetze" target="_blank" style="color: #cccccc; text-decoration: none;">Allison N. Zengilowski &amp; Brendan A. Schuetze</a></div>
+										<iframe aria-label="APA Division 15 Podcast" style="width: 250px;height: 250px;" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1098804097&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
 									</div>
-								</div>
+								</div> 
 							</div>
 						</div>
 					</div>
